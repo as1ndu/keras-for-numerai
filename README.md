@@ -1,6 +1,6 @@
 # Keras for numerai
 
-Contains code for participation in the Numerai using deep learning framework, [Keras](http://keras.io)
-Participation in the http://numer.ai competition with keras.
+Contains starter code for participation in the [Numerai](http://numer.ai) using deep learning framework, [Keras](http://keras.io)
+
 
 
