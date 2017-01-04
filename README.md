@@ -26,7 +26,8 @@ Create predictions `python predict.py` predictions are in  `/predictions/predict
 Varies by architecture used & Numerai data released each week 
 
 
-[Wired Article on Numerai](https://techcrunch.com/2016/12/12/numer-ai-is-a-crowdsourced-hedge-fund-for-machine-learning-experts/)
+[Wired Article on Numerai](https://www.wired.com/.../7500-faceless-coders-paid-bitcoin-built-hedge-funds-brain/
+)
 
 
 
