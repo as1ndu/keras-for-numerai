@@ -38,7 +38,6 @@ model.add(Dense(1, init='normal', activation='sigmoid')) #Output later
 print 'Modeled Network'
 
 # Compile model
-#sgd = SGD(lr=0.0005, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'] ) 
 print'* Finished compilling model'
 
