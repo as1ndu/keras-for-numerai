@@ -12,7 +12,7 @@ Dependencies
 - `pip install requirements.txt`
 
 Set variables training
- - `validation_split=0.3`, Sets 30% of training data for testing
+ - `validation_split=0.3`, Sets aside 30% of training data for testing
  - `shuffle=True`,  Set to `True` if you want  to shuffle data before each epoch
  - `nb_epoch=50`,  Number of epochs you want your neural net to train
  - `batch_size=5000` Number of batches you would like to use during training
@@ -26,7 +26,7 @@ Create predictions `python predict.py` predictions are in  `/predictions/predict
 Varies by architecture used & Numerai data released each week 
 
 
-[Wired Article on Numerai](http://)
+[Wired Article on Numerai](https://techcrunch.com/2016/12/12/numer-ai-is-a-crowdsourced-hedge-fund-for-machine-learning-experts/)
 
 
 
