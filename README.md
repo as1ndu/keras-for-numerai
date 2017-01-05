@@ -3,10 +3,10 @@
 Contains starter code for participation in the [Numerai](http://numer.ai) competition  using deep learning framework, [Keras](http://keras.io)
 
 ## 1. Configuration
-Define your Neural Network Architeture in `train.py` 
-Download data from [Numerai](http://numer.ai)
-Remove `t_id` column in `numerai_tournament_data`  remove `feature` column in `numerai_training_data`
-Put data in `/data` 
+- Define your Neural Network Architeture in `train.py` 
+- Download data from [Numerai](http://numer.ai)
+- Remove `t_id` column in `numerai_tournament_data`  remove `feature` column in `numerai_training_data`
+- Put data in `/data` 
 
 Dependencies
 - `pip install requirements.txt`
@@ -25,6 +25,7 @@ Create predictions `python predict.py` predictions are in  `/predictions/predict
 ## 3. Performance details
 Varies by architecture used & Numerai data released each week 
 
+[Wide and Deep Neural Net](https://arxiv.org/abs/1606.07792)
 
 [Wired Article on Numerai](https://www.wired.com/.../7500-faceless-coders-paid-bitcoin-built-hedge-funds-brain/
 )
