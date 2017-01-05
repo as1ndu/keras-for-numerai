@@ -25,6 +25,8 @@ Create predictions `python predict.py` predictions are in  `/predictions/predict
 ## 3. Performance details
 Varies by architecture used & Numerai data released each week 
 
+
+## 4. Links 
 [Wide and Deep Neural Net](https://arxiv.org/abs/1606.07792)
 
 [Wired Article on Numerai](https://www.wired.com/.../7500-faceless-coders-paid-bitcoin-built-hedge-funds-brain/
