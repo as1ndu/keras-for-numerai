@@ -1,5 +1,5 @@
 # Keras for numerai
-
+[See blog post](https://as1ndu.github.io/blog/a-practical-introduction-to-deeplearning-with-keras-and-numerai/)
 Contains starter code for participation in the [Numerai](http://numer.ai) competition  using deep learning framework, [Keras](http://keras.io)
 
 ## 1. Configuration
