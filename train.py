@@ -13,12 +13,12 @@ seed = 7
 numpy.random.seed(seed)
 
 #load data
-dataframe = pandas.read_csv("data/numerai_training_data.csv", header=None)
+dataframe = pandas.read_csv("data/numerai_training_data.csv")
 dataset = dataframe.values
 
 # split into input (X) and output (Y) variables
-X = dataset[:,0:50].astype(float) #X f(eatures) are from the first column and the 50th column
-Y = dataset[:,50] # Y (lables) are from the 50th column
+X = dataset[:,:-1].astype(float) #X f(eatures) are from the first column and the 50th column
+Y = dataset[:,-1] # Y (lables) are from the 50th column
 
 #Example Neural Network Architecture
 #Define Neural network architecture of 10 Hidden layer with 500 Neurons each
