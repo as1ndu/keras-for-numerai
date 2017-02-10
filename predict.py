@@ -6,9 +6,9 @@ import os
 import pandas
 
 #load data
-dataframe = pandas.read_csv("data/numerai_training_data.csv", header=None)
+dataframe = pandas.read_csv("data/numerai_training_data.csv")
 dataset = dataframe.values
-X = dataset[:,0:50].astype(float)
+X = dataset[:,:-1].astype(float)
 
 
 # load json and create model
