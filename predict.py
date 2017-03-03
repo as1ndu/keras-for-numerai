@@ -8,7 +8,7 @@ import pandas
 #load data
 dataframe = pandas.read_csv("data/numerai_training_data.csv")
 dataset = dataframe.values
-X = dataset[:,:-1].astype(float)
+X = dataset[:,:50].astype(float)
 
 
 # load json and create model
@@ -37,4 +37,4 @@ numpy.savetxt(
     newline='\n',           # new line character
     header= 'probability')   # file header
 
-print 'Predictions saved to /predictions/prediction2.csv'
+print 'Predictions saved to /predictions/prediction_01.csv'
