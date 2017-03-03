@@ -1,2 +1,4 @@
 *.pyc
 .h5
+data/*
+.gitignore
