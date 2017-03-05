@@ -6,9 +6,9 @@ import os
 import pandas
 
 #load data
-dataframe = pandas.read_csv("data/numerai_training_data.csv")
+dataframe = pandas.read_csv("data/numerai_tournament_data.csv")
 dataset = dataframe.values
-X = dataset[:,:50].astype(float)
+X = dataset[:,0:50]
 
 
 # load json and create model
@@ -30,11 +30,11 @@ print('* Making predictions..')
 predictions = loaded_model.predict(X)
 
 numpy.savetxt(
-    'predictions/predictions.csv',          # file name
+    'predictions/predictions_02.csv',          # file name
     predictions,  # array to save
     fmt='%.9f',               # formatting, 2 digits in this case
     delimiter=',',          # column delimiter
     newline='\n',           # new line character
     header= 'probability')   # file header
 
-print 'Predictions saved to /predictions/prediction_01.csv'
+print 'Predictions saved to /predictions/prediction_03.csv'

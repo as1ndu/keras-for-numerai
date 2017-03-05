@@ -5,6 +5,7 @@ import pandas
 from keras.models import *
 from keras.layers import *
 from keras.optimizers import *
+from keras.regularizers import l2
 
 
 
@@ -17,7 +18,7 @@ dataframe = pandas.read_csv("data/numerai_training_data.csv")
 dataset = dataframe.values
 
 # split into input (X) and output (Y) variables
-X = dataset[:,:50].astype(float) #X f(eatures) are from the first column and the 50th column
+X = dataset[:,0:50].astype(float) #X f(eatures) are from the first column and the 50th column
 Y = dataset[:,50] # Y (lables) are from the 50th column
 
 #Example Neural Network Architecture
@@ -25,9 +26,9 @@ Y = dataset[:,50] # Y (lables) are from the 50th column
 model = Sequential()
 model.add(Dense(128, input_dim=50, init='uniform', activation='relu'))
 model.add(Dropout(0.25))
-model.add(Dense(64, activation='relu'))
+model.add(Dense(128, activation='relu', W_regularizer=l2(0.001) ))
 model.add(Dropout(0.25))
-model.add(Dense(32, activation='relu'))
+model.add(Dense(128, activation='relu', W_regularizer=l2(0.001) ))
 model.add(Dropout(0.25))
 model.add(Dense(1, activation='sigmoid'))
 print 'Modeled Network'
